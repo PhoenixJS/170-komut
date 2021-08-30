@@ -75,7 +75,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
     .addField("» **Bit**", `\`${os.arch()}\``, true)
     .setThumbnail(client.user.avatarURL())
   .setImage("")
-    .addField("» **İşletim Sistemi**", `\`\`${os.platform()}\`\``)
+    .addField("» **İşletim Sistemi**", `\`\`\`${os.platform()}\`\`\``)
     .addField("**➥ Linkler**", "**[Davet Linki](https://discord.com/oauth2/authorize?client_id=869251332010299392&scope=bot&permissions=8)**\n **[Destek Sunucu](https://discord.gg/kqaBAxkkuX)**\n**[Website= YAKINDA]()**");
   return message.channel.send(msg);
 };
