@@ -45,4 +45,4 @@ let eklenti = new Discord.MessageEmbed()
   exports.help = {
     name: 'botlist'
   }; 
-  
+   
