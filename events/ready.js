@@ -7,8 +7,9 @@ var prefix = ayarlar.prefix;
   
 module.exports = client => {
 var oyun = [
-        `Yakında`,
-        `Yeni Sistemler`
+        `🏆 | BRK Bot | Yardımmı Lazım | .yardım |.davet`,
+        `🏆 | Gelişmiş Sistemler`, 
+        `🏆 | https://discord.gg/tahsineren Discord Sunucumuz!`
     ];
 
     setInterval(function() {
