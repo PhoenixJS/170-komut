@@ -2,9 +2,9 @@ const Discord = require('discord.js')
 const db = require("croxydb");
 const ayarlar = require('../ayarlar.json')
 exports.run = (client, message, args) => {
-
+let prefix = ayarlar.prefix
   
-  if(message.author.id != "627803211348312065") return //Bot sahip id
+  if(message.author.id != "751717933700349972") return //Bot sahip id
   
   if(!args[0]) return message.channel.send(`**Bakım modunu açmak için ${prefix}bakım aç**`)
   
