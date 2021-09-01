@@ -1544,7 +1544,7 @@ client.on('clickButton', (button) => {
 
 
 client.on('message', msg => {
-  if (msg.content === '!test') {
+  if (msg.content === '.yardım') {
       const embed1 = new Discord.MessageEmbed()
               .setTitle('Bot')
                   .setDescription(`
