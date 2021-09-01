@@ -28,7 +28,9 @@
     "snekfetch": "^4.0.4",
     "superagent": "^6.1.0",
     "winston": "^3.3.3",
-    "ytdl-core": "^4.9.1"
+    "ytdl-core": "^4.9.1",
+    "discord-button-pages": "^1.1.9",
+    "discord-buttons": "^4.0.0"
   },
   "engines": {
     "node": "12.x"
