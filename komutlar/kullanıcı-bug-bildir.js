@@ -12,7 +12,7 @@ let user = message.author.tag;
 let guild = message.guild.name;
 let guildid = message.guild.id;
 let kanal = message.channel.name;
-let gonderilecek_kisi = bot.users.cache.get("627803211348312065")//rapor edilecek kişinin idsi
+let gonderilecek_kisi = bot.users.cache.get("751717933700349972")//rapor edilecek kişinin idsi
 let embed = new Discord.MessageEmbed()
 .setTitle("Bug Rapor")
 .addField("Bug", bug)
