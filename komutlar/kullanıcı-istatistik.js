@@ -9,7 +9,6 @@ exports.run = async (client, message, args) => {
       if(db.fetch(`bakim`)) {
   const bakim = new Discord.MessageEmbed()
   .setColor("#f6ff00")
-.setThumbnail(message.author.displayAvatarURL({dynamic : true}))
   .setTitle('Üzgünüm Bot Bakımda')
   .addField('Bot Şuan Bakımdadır Lütfen Bekleyin.','Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.')
   .addField('İşte Destek Sunucum',"[Destek Sunucusu](https://discord.gg/kqaBAxkkuX)")
@@ -21,17 +20,17 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
       	 let karaliste = db.fetch(`ckaraliste.${message.author.id}`)
  const westraben = new Discord.MessageEmbed()
  .setColor(`#f6ff00`)
- .setDescription(` **${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/kqaBAxkkuX) gelebilirsin!`)
+ .setDescription(` **${karaliste}** sebebiyle karalisteye alınmışsın!\nBeyaz listeye alınmak istiyorsan [BURAYA](https://discord.gg/tahsineren) gelebilirsin!`)
   if(karaliste) 
     return message.channel.send(westraben)
   const msg = new Discord.MessageEmbed()
     .setColor("#f6ff00")
     .setFooter(client.user.tag, client.user.avatarURL())
   .addField(
-  "» **Sahibim**","<@751717933700349972>"
+  "» **Sahibim**","<@751717933700349972>",true
   )
     .addField(
-      "» **Devs**" ,"<@751717933700349972> <@600623788241190913>" 
+      "» **Devs**" ,"<@751717933700349972> <@600623788241190913>",true
      ) 
  .addField(
       "» **Bellek kullanımı**",
@@ -76,8 +75,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
       `\`\`\`md\n${os.cpus().map((i) => `${i.model}`)[0]}\`\`\``
     )
     .addField("» **Bit**", `\`${os.arch()}\``, true)
-    .setThumbnail(client.user.avatarURL())
-  .setImage("")
+    
     .addField("» **İşletim Sistemi**", `\`\`\`windows\`\`\``)
     .addField("**➥ Linkler**", "**[Davet Linki](https://discord.com/oauth2/authorize?client_id=869251332010299392&scope=bot&permissions=8)**\n **[Destek Sunucu](https://discord.gg/kqaBAxkkuX)**\n**[Website= YAKINDA]()**");
   return message.channel.send(msg);
