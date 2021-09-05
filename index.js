@@ -1556,18 +1556,7 @@ client.on('message', msg => {
 **╚══════◥◣❖◢◤═══════╝**
 
     Ping -> **${client.ws.ping}**
-    Prefix -> **${prefix}**
-    
-**╔══════◥◣❖◢◤═══════╗**
-**║ \`${prefix}botdavet\` __Botu Davet Edebilirsiniz!__**
-**║**
-**║ \`${prefix}istatistik\` __İstatistiklerini Göre Bilirsiniz.__**
-**║**
-**║ \`${prefix}tavsiye\` __Bizlere Tavsiye Verirsiniz.__**
-**║**
-**║ \`${prefix}bug-bildir\` __Bot Hatalarını Bildirirsiniz.__**
-**║**
-**╚══════◥◣❖◢◤═══════╝**
+    Prefix -> ** ${prefix} **
 
 (👈) Geri Sarar   (🛑) Menüyü Kapatır   (👉) İleri Sarar
 
