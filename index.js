@@ -1548,22 +1548,26 @@ client.on('message', msg => {
       const embed1 = new Discord.MessageEmbed()
               .setTitle('Bot')
                   .setDescription(`
-**╔════════◥◣❖◢◤═════════╗**
+**╔══════◥◣❖◢◤═══════╗**
 **║ Bilgilendirme.**
 **║ [Botu Davet Et](https://discord.com/api/oauth2/authorize?client_id=877628391031988266&permissions=261993005055&scope=bot)**
-**║ [Destek Sunucusu](https://discord.gg/tahsineren)
-**║ [Bot Sitesi](https://brkbot.glitch.me/)** n/ [Yenilikler = Ekonomi Sistemi Eklendi.](https://discord.gg/tahsineren)
-**╚════════◥◣❖◢◤═════════╝**
+**║ [Destek Sunucusu](https://discord.gg/tahsineren)**
+**║ [Bot Sitesi](https://brkbot.glitch.me/)**
+**╚══════◥◣❖◢◤═══════╝**
 
     Ping -> **${client.ws.ping}**
     Prefix -> **${prefix}**
     
-**╔════════◥◣❖◢◤═════════╗**
+**╔══════◥◣❖◢◤═══════╗**
 **║ \`${prefix}botdavet\` __Botu Davet Edebilirsiniz!__**
+**║**
 **║ \`${prefix}istatistik\` __İstatistiklerini Göre Bilirsiniz.__**
+**║**
 **║ \`${prefix}tavsiye\` __Bizlere Tavsiye Verirsiniz.__**
+**║**
 **║ \`${prefix}bug-bildir\` __Bot Hatalarını Bildirirsiniz.__**
-**╚════════◥◣❖◢◤═════════╝**
+**║**
+**╚══════◥◣❖◢◤═══════╝**
 
 (👈) Geri Sarar   (🛑) Menüyü Kapatır   (👉) İleri Sarar
 

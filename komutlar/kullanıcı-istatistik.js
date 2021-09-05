@@ -30,7 +30,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
   "» **Sahibim**","<@751717933700349972>",true
   )
     .addField(
-      "» **Devs**" ,"<@751717933700349972> <@600623788241190913>",true
+      "» **Devs**" ,"<@751717933700349972> <@845035147492589639>",true
      ) 
  .addField(
       "» **Bellek kullanımı**",
