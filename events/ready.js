@@ -9,7 +9,9 @@ module.exports = client => {
 var oyun = [
         `🏆 | BRK Bot | Yardımmı Lazım | .yardım |.davet`,
         `🏆 | Gelişmiş Sistemler`, 
-        `🏆 | https://discord.gg/tahsineren Discord Sunucumuz!`
+        `🏆 | https://discord.gg/tahsineren Discord Sunucumuz!`,
+        `${client.guilds.cache.size} Sunucu!`,
+        `${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} Kullanıcı`
     ];
 
     setInterval(function() {
