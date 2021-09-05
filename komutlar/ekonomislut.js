@@ -78,6 +78,6 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'çalış',
+  name: 'slut',
 
 };//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\

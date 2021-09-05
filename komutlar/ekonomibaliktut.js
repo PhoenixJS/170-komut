@@ -56,7 +56,7 @@ exports.conf = {
 
 exports.help = {
 
-  name: "balık-tut",
+name: "catch-fish",
 
   description: "Balık Tutarsın.",
 

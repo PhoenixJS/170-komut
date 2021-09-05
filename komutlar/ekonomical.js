@@ -152,6 +152,6 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'çal',
+  name: 'steal',
 
 };
