@@ -62,5 +62,5 @@ exports.conf = {
   aliases: [],
 };
 exports.help = {
-  name: 'cf',
+  name: 'bahis',
 };

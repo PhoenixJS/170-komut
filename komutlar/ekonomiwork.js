@@ -46,7 +46,7 @@ let times = await db.fetch(`çalışmasüresi_${message.author.id}`)
 
   var work = works[Math.floor(Math.random() * works.length)];
 
-let moneys = rastgeleMiktar(600,1200);
+let moneys = rastgeleMiktar(1500,2000);
 
       message.channel.send(new Discord.MessageEmbed()
 
@@ -78,6 +78,6 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'work',
+  name: 'çalış',
 
 };//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
