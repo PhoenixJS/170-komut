@@ -29,6 +29,11 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
   if (isim == null) isimYazi = "`İsim ayarlanmamış!`";
   else isimYazi = ` \`${isim}\``;
   
+  let hakkımda = await db.fect(`phakkimda_${user.id}`);
+  let hakkimdaYazi;
+  if (isim == null) hakkimdaYazi = "`Hakkımda kısmı ayarlanmamış! `"
+  else hakkimdaYazi = `\`${hakkımda} \``;
+  
   let favorioyun = db.fetch(`pfavorioyun_${message.author.id}`);
   let favoriYazi;
   if (favorioyun == null) favoriYazi = " `Oyun ayarlanmamış!`";
@@ -66,13 +71,14 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
   .setThumbnail(user.displayAvatarURL({dynamic : true}))
 .setImage(user.displayAvatarURL({dynamic : true}))
   .setColor('#f6ff00')
-    .addField("『 İsim 』", isimYazi)
-    .addField("『 Soy isim 』", soyisimYazi)
-    .addField("『 Yaş 』", yasYazi)
-    .addField("『 Cinsiyet 』", csYazi)
-    .addField("『 Bayrak! 』", bYazi)
-    .addField("『 Favori Oyun 』", favoriYazi)
-    .addField("『 Favori Şarkı 』", favorisYazi)
+    .addField("『 İsim ", isimYazi)
+    .addField("『 Soy isim ", soyisimYazi)
+    .addField("『 Yaş ", yasYazi)
+    .addField("『 Cinsiyet ", csYazi)
+    .addField("『 Bayrak! ", bYazi)
+    .addField("『 Favori Oyun ", favoriYazi)
+    .addField("『 Favori Şarkı ", favorisYazi)
+    .addField(" Hakkımda ", hakkimdaYazi)
   message.channel.send(embed);
 };
 exports.conf = {
