@@ -572,8 +572,8 @@ client.on("message", msg => {
     .setColor('#f6ff00')
     .setTitle("▬▬▬▬[ Yardım Mesajım ]▬▬▬▬\n ")
     .addField("\n**Galiba Benden Yardım İstiyorsun ? O zaman Sana Yardım Edeyim.**\n","**\n`.yardım` Yazarak Benim `Tüm Komutlarımı Görebilirsin` ve Aşşağıdaki `Destek Sunucusuna Gelerek Botun Sahibinden Yardım Alabilirsin.`**")
-    .addField("**➥ Link**", "Destek Sunucu](https://discord.gg/tahsineren)")
-    .setImage("https://cdn.discordapp.com/attachments/767544528537649193/782343766446964746/standard_2.gif")
+    .addField("**➥ Link**", "[Destek Sunucu](https://discord.gg/tahsineren)")
+    .setImage("https://cdn.discordapp.com/attachments/884803042673848330/884807822636888094/standard.gif")
     .setFooter(`${msg.author.username} Yardım Edebildiysem Çok Mutluyum.`, msg.author.avatarURL())
   if (msg.content.includes(`<@${client.user.id}>`) || msg.content.includes(`<@!${client.user.id}>`)) {
     msg.channel.send(westrabumbe);
@@ -1265,14 +1265,14 @@ client.on('message', async (msg, member, guild) => {
 
 ///////////////////////OtoCevap////////////////////////////
 client.on("message", msg => {
-  if (msg.content.toLowerCase() === "spallers") {
+  if (msg.content.toLowerCase() === "BRK") {
     const oto = new Discord.MessageEmbed()
     .setThumbnail(msg.author.displayAvatarURL({dynamic : true}))
     .setColor('#f6ff00')
-    .setTitle("▬▬▬▬[<a:sasa:778787940741677088> Yardım Mesajım <a:kral:778787824018653205>]▬▬▬▬\n ")
-    .addField("\n**Galiba Benden Yardım İstiyorsun ? O zaman Sana Yardım Edeyim.**\n","**\n`s*yardım` Yazarak Benim `Tüm Komutlarımı Görebilirsin` ve Aşşağıdaki `Destek Sunucusuna Gelerek Botun Sahibinden Yardım Alabilirsin.`**")
-    .addField("**➥ Link**", "[<a:kral:778787824018653205> Destek Sunucu](https://discord.gg/esXbPnr)")
-    .setImage("https://cdn.discordapp.com/attachments/767544528537649193/782343691221205052/standard.gif")
+    .setTitle("▬▬▬▬[ Yardım Mesajım ]▬▬▬▬\n ")
+    .addField("\n**Galiba Benden Yardım İstiyorsun ? O zaman Sana Yardım Edeyim.**\n","**\n`.yardım` Yazarak Benim `Tüm Komutlarımı Görebilirsin` ve Aşşağıdaki `Destek Sunucusuna Gelerek Botun Sahibinden Yardım Alabilirsin.`**")
+    .addField("**➥ Link**", "[ Destek Sunucu](https://discord.gg/tahsineren)")
+    .setImage("https://cdn.discordapp.com/attachments/884803042673848330/884807822636888094/standard.gif")
     .setFooter(`${msg.author.username} Yardım Edebildiysem Çok Mutluyum.`, msg.author.avatarURL())
         
     msg.channel.send(oto).then(a=>a.delete({timeout:10000}));
@@ -1426,14 +1426,14 @@ let log = guild.channels.cache.get(logFetch);
 if(oldUser.username === newUser.username) return;
 if(newUser.username.includes(tag) && !oldUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('Spallers - TAG Alındı.')
+.setTitle('BRK - TAG Alındı.')
 .setColor('#f6ff00')
 .setDescription(`${newUser} **Aramıza hoşgeldin. \`${tag}\` tagını aldığı için ${role} rolü verildi!**`));
 guild.members.cache.get(newUser.id).roles.add(role.id);
 }
 if(oldUser.username.includes(tag) && !newUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('Spallers - TAG Çıkarıldı.')
+.setTitle('BRK - TAG Çıkarıldı.')
 .setColor('#f6ff00')
 .setDescription(`${newUser} **Aramızdan ayrıldı. \`${tag}\` tagını çıkardığı için ${role} rolü alındı!**`));
 guild.members.cache.get(newUser.id).roles.remove(role.id);
@@ -1561,7 +1561,8 @@ client.on('message', msg => {
 (👈) Geri Sarar   (🛑) Menüyü Kapatır   (👉) İleri Sarar
 
       	            `  )
-      	                    .setColor('RED');
+      	                    .setColor('RED')
+    .setImage("https://cdn.discordapp.com/attachments/884803042673848330/884807822636888094/standard.gif")
     const embed2 = new Discord.MessageEmbed()
             .setTitle('Yardım Menü')
                 .setDescription(`
@@ -1592,6 +1593,7 @@ client.on('message', msg => {
 \`${prefix}sunucukur\` <a:okeys:842778593079197717> **Sunucukur Komutlarını Gösterir.**
     `)
             .setColor("f6ff00")
+    .setImage("https://cdn.discordapp.com/attachments/884803042673848330/884807822636888094/standard.gif")
     const embedPages = [embed1, embed2,  ];
         ButtonPages.createPages(client.interaction, msg, embedPages, 80 * 1000, "green", "👉", "👈", "🛑","💎")
   }
