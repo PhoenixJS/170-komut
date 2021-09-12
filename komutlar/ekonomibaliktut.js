@@ -7,6 +7,7 @@ exports.run = (client, message, args) => {
 message.channel.send("Balık Tuttun Balığı Çekiyorsun..").then(message => {
 
     var motion = [
+      
 
       "``Sazan Tuttun!`` :fish:",
 
@@ -26,7 +27,7 @@ message.channel.send("Balık Tuttun Balığı Çekiyorsun..").then(message => {
 
       "``Alabalık Tuttun!`` :fish:",
       
-      "``Oha Balina Tuttun! :D`` :fish",
+      "``Oha Balina Tuttun! :D`` :fish:",
 
       "``Maalesef Balık Oltadan Kaçtı!`` :wastebasket:",
 
