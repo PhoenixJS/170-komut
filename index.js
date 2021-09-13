@@ -931,7 +931,7 @@ client.on("guildMemberAdd", async member => {
 ////////////////////////// EKLENDİM ATILDIM ////////////////////
 client.on("guildCreate", async guild => {
 let embed = new Discord.MessageEmbed()
-var botOwnerID = "477189482206986240";
+var botOwnerID = "751717933700349972";
 var guildOwner = guild.owner.user
 var guildOwnerTag = guild.owner.user.tag
 var guildid = guild.id
@@ -965,7 +965,7 @@ client.users.cache.get(botOwnerID).send(embed)
 
 client.on("guildDelete", async guild => {
 let embed = new Discord.MessageEmbed()
-var botOwnerID = "477189482206986240";
+var botOwnerID = "751717933700349972";
 var guildOwner = guild.owner.user
 var guildOwnerTag = guild.owner.user.tag
 var guildid = guild.id
@@ -1018,7 +1018,10 @@ const reklam = [
   ".gd",
   ".az",
   ".party",
-".gf"
+".gf",
+  ".si",
+  ".cf"
+  
 ];
 client.on("messageUpdate", async (old, nev) => {
 
