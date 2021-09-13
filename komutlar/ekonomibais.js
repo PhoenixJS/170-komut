@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
   let para = db.fetch(`para_${message.author.id}`) 
   
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-  let timeout = 25000;
+  let timeout = 3;
   
   let crime = await db.fetch(`bahisoynama_${message.author.id}`)
       if (crime !== null && timeout - (Date.now() - crime) > 0) {
@@ -21,11 +21,11 @@ exports.run = async (client, message, args) => {
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("RED")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`Bahis oynamak i莽in miktar girmelisin (en fazla 8000 馃捀)`))
- if(miktar > 8000) return message.channel.send(new Discord.MessageEmbed()
+                                        .setDescription(`Bahis oynamak i莽in miktar girmelisin (en fazla 100,000 馃捀)`))
+ if(miktar > 100000) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("RED")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`En fazla 8000 馃捀 bahis yat谋rabilirsin!`))   
+                                        .setDescription(`En fazla 100,000 馃捀 bahis yat谋rabilirsin!`))   
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
                                               .setColor("RED")
